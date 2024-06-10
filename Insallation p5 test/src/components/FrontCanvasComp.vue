@@ -33,10 +33,10 @@ const script = p5 => {
         
        
         p5.push();
-        p5.translate(-40, -200);
-        p5.scale(2);
-        p5.tint(255,255,255,30);
-        p5.image(capture, xPos, yPos, targetWidth, targetHeight);
+        p5.translate(-40, -200); //Skubbet til venstre og op
+        p5.scale(2); //Forstørret
+        p5.tint(255,255,255,30); //30% opacity
+        p5.image(capture, xPos, yPos, targetWidth, targetHeight); //Den der ligger fofrrest
         p5.pop();
 
 
