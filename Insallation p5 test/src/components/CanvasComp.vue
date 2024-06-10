@@ -13,7 +13,7 @@ const script = p5 => {
         
       };
       p5.draw = () => {
-        p5.background(120);
+        p5.background(255, 0);
 
         // //Calculate aspect ratio
         let videoWidth = capture.width;
@@ -30,11 +30,24 @@ const script = p5 => {
         let yPos = (p5.height - targetHeight) / 2;
 
         //Draw the video capture within the canvas:
-
+        p5.push();
+        p5.tint(8,210,247,100);
+        
         p5.image(capture, xPos, yPos, targetWidth, targetHeight);
+        p5.pop();
+        
+       
+        // p5.push();
+        // p5.translate(-40, -200);
+        // p5.scale(2);
+        // p5.tint(8,210,247,70);
+        // p5.image(capture, xPos, yPos, targetWidth, targetHeight);
+        // p5.pop();
+
+
         
 
-        p5.ellipse(p5.mouseX, p5.mouseY, 40, 40);
+        //p5.ellipse(p5.mouseX, p5.mouseY, 40, 40);
       }; 
     }
     // Attach the canvas to the div
@@ -43,6 +56,6 @@ const script = p5 => {
 </script>
 
 <template>
-<h1 class="italic">hej</h1>
+
 
 </template>
