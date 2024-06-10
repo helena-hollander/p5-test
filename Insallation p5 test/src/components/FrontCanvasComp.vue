@@ -29,20 +29,15 @@ const script = p5 => {
         let xPos = (p5.width - targetWidth) / 2;
         let yPos = (p5.height - targetHeight) / 2;
 
-        //Draw the video capture within the canvas:
-        p5.push();
-        p5.tint(247,0,200,100);
-        
-        p5.image(capture, xPos, yPos, targetWidth, targetHeight);
-        p5.pop();
+       
         
        
-        // p5.push();
-        // p5.translate(-40, -200);
-        // p5.scale(2);
-        // p5.tint(8,210,247,70);
-        // p5.image(capture, xPos, yPos, targetWidth, targetHeight);
-        // p5.pop();
+        p5.push();
+        p5.translate(-40, -200);
+        p5.scale(2);
+        p5.tint(255,255,255,30);
+        p5.image(capture, xPos, yPos, targetWidth, targetHeight);
+        p5.pop();
 
 
         
