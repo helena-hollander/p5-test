@@ -15,15 +15,18 @@ import HeroComp from '@/components/HeroComp.vue'; //Grafikken på Hero page
 </div>
 </template>
 
-<style scoped>
+<style>
 #defaultCanvas0 {
-  filter: blur(30px);
-  -webkit-filter: blur(30px); /*den skal også være den samme som blur, så det virker i browseren*/
+
+filter: blur(30px) hue-rotate(60deg) contrast(1.9);
+-webkit-filter: blur(30px) contrast(1.9) saturate(0.25) brightness(1.25) invert(100%); /*alle filters skal være i samme kode, så de ikke annullerer hinanden. I denne web udgave, virker de*/
+
  mix-blend-mode: hue; /*Typo forsvinder, hvis ikke blend er hue... ved ikke hvorfor*/
  position: fixed; /*så den ikke flytter sig.*/
 }
 #defaultCanvas1 {
- opacity: 0.25; /*Opacity 25%*/
+ opacity: 0.1; /*Opacity 25%*/
+ filter: /*invert(100%)*/ brightness(2);
  pointer-events: none; /*Så jeg kan klikke på ting bagved*/
  position: fixed;
 }
