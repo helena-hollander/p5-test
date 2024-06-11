@@ -9,7 +9,7 @@ import HeroComp from '@/components/HeroComp.vue'; //Grafikken på Hero page
   <div>
     <CanvasComp></CanvasComp>
   </div>
-<HeroComp class="absolute z-10"></HeroComp>
+<!-- <HeroComp class="absolute z-10"></HeroComp> -->
 <div>
 <FrontCanvasComp></FrontCanvasComp>
 </div>
@@ -19,7 +19,7 @@ import HeroComp from '@/components/HeroComp.vue'; //Grafikken på Hero page
 #defaultCanvas0 {
 
 filter: blur(30px) hue-rotate(60deg) contrast(1.9);
--webkit-filter: blur(30px) contrast(1.9) saturate(0.25) brightness(1.25) invert(100%); /*alle filters skal være i samme kode, så de ikke annullerer hinanden. I denne web udgave, virker de*/
+-webkit-filter: blur(30px) contrast(1.9) saturate(0.25) brightness(1.25); /*alle filters skal være i samme kode, så de ikke annullerer hinanden. I denne web udgave, virker de*/
 
  mix-blend-mode: hue; /*Typo forsvinder, hvis ikke blend er hue... ved ikke hvorfor*/
  position: fixed; /*så den ikke flytter sig.*/
