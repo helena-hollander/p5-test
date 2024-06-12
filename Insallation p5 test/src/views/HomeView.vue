@@ -9,7 +9,7 @@ import HeroComp from '@/components/HeroComp.vue'; //Grafikken på Hero page
   <div>
     <CanvasComp></CanvasComp>
   </div>
-<!-- <HeroComp class="absolute z-10"></HeroComp> -->
+<HeroComp class="absolute z-10"></HeroComp>
 <div>
 <FrontCanvasComp></FrontCanvasComp>
 </div>
