@@ -2,14 +2,20 @@
 import CanvasComp from '@/components/CanvasComp.vue'; //Bagerste canvas comp
 import FrontCanvasComp from '@/components/FrontCanvasComp.vue'; //Forreste canvas comp
 import HeroComp from '@/components/HeroComp.vue'; //Grafikken på Hero page
+import AboutComp from '@/components/AboutComp.vue';
 </script>
 
 <template>
+<CanvasComp></CanvasComp>
 
-  <div>
-    <CanvasComp></CanvasComp>
-  </div>
-<HeroComp class="absolute z-10"></HeroComp>
+<section id="hero">
+  <HeroComp class="absolute z-10 h-screen"></HeroComp>
+</section>
+
+<section id="about">
+  <AboutComp class="absolute translate-y-[100vh]"></AboutComp>
+</section>
+
 <div>
 <FrontCanvasComp></FrontCanvasComp>
 </div>
