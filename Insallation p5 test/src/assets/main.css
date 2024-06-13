@@ -23,4 +23,8 @@
       font-family: 'BrødBold';
       src: url('../assets/fonts/Minion-Bold.ttf') format('truetype');
     }
+    @font-face {
+      font-family: 'BrødItalic';
+      src: url('../assets/fonts/Minion-SemiboldIt.ttf') format('truetype');
+    }
   }

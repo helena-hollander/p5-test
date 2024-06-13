@@ -20,7 +20,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["DisplayFont", "sans-serif"], bold: ["DisplayBold"], brød:["BrødRegulær"], brødbold:["BrødBold"],
+        display: ["DisplayFont", "sans-serif"], bold: ["DisplayBold"], brød:["BrødRegulær"], brødbold:["BrødBold"], brøditalic: ["BrødItalic"],
       },
     },
   },
