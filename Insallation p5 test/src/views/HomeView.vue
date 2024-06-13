@@ -16,7 +16,7 @@ import AboutComp from '@/components/AboutComp.vue';
   <AboutComp class="absolute translate-y-[100vh]"></AboutComp>
 </section>
 
-<div class="pointer-events-none">
+<div>
 <FrontCanvasComp></FrontCanvasComp>
 </div>
 </template>
@@ -26,7 +26,7 @@ import AboutComp from '@/components/AboutComp.vue';
 
 filter: blur(30px) hue-rotate(60deg) contrast(1.9);
 -webkit-filter: blur(30px) contrast(1.9) saturate(0.25) brightness(1.25); /*alle filters skal være i samme kode, så de ikke annullerer hinanden. I denne web udgave, virker de*/
-
+pointer-events: none;
  mix-blend-mode: hue; /*Typo forsvinder, hvis ikke blend er hue... ved ikke hvorfor*/
  position: fixed; /*så den ikke flytter sig.*/
 }
