@@ -12,11 +12,11 @@ import AboutComp from '@/components/AboutComp.vue';
   <HeroComp class="absolute z-10 h-screen"></HeroComp>
 </section>
 
-<section id="about">
+<section id="aboutsection">
   <AboutComp class="absolute translate-y-[100vh]"></AboutComp>
 </section>
 
-<div>
+<div class="pointer-events-none">
 <FrontCanvasComp></FrontCanvasComp>
 </div>
 </template>
